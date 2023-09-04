@@ -1,0 +1,25 @@
+% !Mode:: "TeX:UTF-8"
+
+\begin{abstract}
+抗癌药物组合治疗已经成为一种成熟的癌症治疗方法，由于药物组合空间的扩大和基因变异的多样性，寻找新的具有显著协同作用的药物组合变得更加困难， 所以，迫切需要一种新的方法来提升抗癌药物组合协同作用的预测性能，以便进行早期研究。本文旨在提出一种基于药物组合相似性的网络模型，探索其在抗癌药物组合协同预测研究中的适用性。 
+
+首先，本文提出一个相似性假设：分子指纹相似的药物组合对于固定细胞系具有相似的协同作用。进一步利用药物组合之间的Tanimoto系数，以及对应组合的协同得分之间的Spearman相关系数，探索高\texttt{\symbol{92}}低相似药物组合团的协同得分分布规律，从而验证相似性假设。然后，基于相似性假设和近邻思想构建了药物组合相似性网络模型DCSN，采用留一交叉验证法确定模型参数，评估模型性能。最后，将DCSN应用于两个来自不同平台的抗癌药物组合高通量筛选数据集，验证模型的有效性和适应性，并通过四种参数设置方法分析参数（邻居数和衰减率）的敏感性。实验结果显示，DCSN以低时间计算成本得到的预测结果均高于几种经典的机器学习模型；邻居数对预测结果影响较大，衰减率对预测结果影响较小。上述结果表明，DCSN可以作为抗癌药物组合高通量虚拟筛选的可选择工具。
+\end{abstract}
+
+\begin{keywords}
+抗癌药物组合；细胞系；协同作用；相似性网络
+\end{keywords}
+
+\cleardoublepage
+
+\begin{englishabstract}
+Combination therapy with anticancer drugs has emerged as a mature approach for cancer treatment. However, due to the expansion of the drug combination space and the diversity of genetic variations, it has become increasingly challenging to identify new drug combinations that exhibit significant synergistic effects. Therefore, there is an urgent need for a new method to enhance the predictive performance of synergistic anticancer drug combinations for early-stage research. This paper aims to propose a network model based on drug combination similarity and explore its applicability in predicting synergistic effects of anticancer drug combinations.
+
+Firstly, a similarity hypothesis is proposed in this study: drug combinations with similar molecular fingerprints exhibit similar synergistic effects on specific cell lines. Furthermore, the Tanimoto coefficient between drug combinations and the Spearman correlation coefficient between their corresponding synergistic scores are used to investigate the distribution patterns of synergistic scores for high and low similarity drug combination clusters, thereby validating the similarity hypothesis. Subsequently, based on the similarity hypothesis and the concept of neighbors, a drug combination similarity network model called DCSN is constructed. The model parameters are determined using leave-one-out cross-validation, and the performance of the model is evaluated. Finally, DCSN is applied to two high-throughput screening datasets of anticancer drug combinations from different platforms to validate the effectiveness and adaptability of the model. Additionally, four parameter configuration methods are employed to analyze the sensitivity of parameters (number of neighbors and decay rate). The experimental results demonstrate that the predictive results obtained by DCSN with low computational cost are consistently higher than those of several classical machine learning models. The number of neighbors has a significant impact on the predictive results, while the decay rate has a minor impact. These findings indicate that DCSN can serve as a valuable tool for high-throughput virtual screening of anticancer drug combinations.
+\end{englishabstract}
+
+\begin{englishkeywords}
+Combination of anticancer drugs; cell lines; synergistic effect; similarity network
+\end{englishkeywords}
+
+\cleardoublepage

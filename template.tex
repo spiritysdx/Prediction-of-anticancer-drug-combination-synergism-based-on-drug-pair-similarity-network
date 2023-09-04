@@ -1,0 +1,106 @@
+% !Mode:: "TeX:UTF-8"
+%% Thesis Template of Yanshan University
+%% for using YSUthesis package with XeLaTeX
+% 2012年3月17日
+%模板信息：YSUthesis v0.3.3 (XƎLATEX).
+%致谢：
+%本模板是在Yin Guobing(尹国冰)制作的YSUthesis v0.3.3基础上修改，感谢原作者。
+%（更新请关注：https://github.com/yinguobing/YSUthesis）
+%本模板是在中科院学位论文LATEX 2模板1CASthesis v0.2 的基础之上修改而
+%来，在此对原作者吴凌云表示感谢！
+%参考文献格式是在CTeX 论坛2 movier 制作的GBT7714-2005.bst 文件基础之
+%上修改得到的，向原作者表示感谢！
+%
+
+%  推荐的编译顺序为：XeLaTeX > BibTeX > XeLaTeX > XeLaTeX
+%  推荐的编译顺序为：XeLaTeX > BibTeX > XeLaTeX > XeLaTeX
+%  推荐的编译顺序为：XeLaTeX > BibTeX > XeLaTeX > XeLaTeX
+%  推荐的编译顺序为：XeLaTeX > BibTeX > XeLaTeX > XeLaTeX
+
+
+
+%% 文档参数配置开始：
+%%===========================%
+\documentclass[showtypeinfo]{YSUthesis}
+
+
+%  设置图形文件的搜索路径。支持图形格式：pdf; png; jpg.
+\graphicspath{{chapter/}{figures/}}
+
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{float}
+
+
+\setmathfont{xits-math.otf}
+%%===========================%
+%% 文档参数配置结束
+
+
+%% 文档正式开始
+%============================%
+\begin{document}
+
+% 以下为封面部分
+%----------------------------%
+  % 中文封面内容
+  \classification{O441.4}                           % 中图分类号
+  \UDC{537.8}                                       % UDC
+  \title{基于相似性网络的抗癌药物组合协同作用预测}           % 论文题目
+  \institute{理学院}                                % 所在单位
+  \major{信息与计算科学}                                % 专业
+  \author{}                                      % 作者姓名
+  \serialnumber{}                        %学号
+  \advisor{教授}                                    % 指导教师
+  \defenddate{2023年5月}                        % 答辩日期
+
+  % 生成封面
+  \makecover
+
+  % 生成中文封里
+  \maketitle
+
+
+% 以下为前言部分
+%----------------------------%
+\frontmatter
+\pagenumbering{Roman}
+
+  % 摘要
+  \include{chapter/abstract}
+
+  % 目录
+  \tableofcontents
+
+
+% 以下为正文部分
+%----------------------------%
+\mainmatter
+  \include{chapter/chap-intro}
+  \include{chapter/chap-2}
+  \include{chapter/chap-3}
+  \include{chapter/chap-4}
+  % \include{chapter/chap-5}
+%  \include{chapter/chap-6}
+%  \include{chapter/chap-7}
+  \include{chapter/chap-conclusion}
+
+  %% 附录
+  % \appendix
+  % \include{chapter/appendix}
+
+
+% 以下为附件部分
+%----------------------------%
+\backmatter
+
+  % 参考文献
+  \bibliography{bib/tex}
+  %\include{chapter/bib}
+
+
+  % 致谢
+  \include{chapter/thanks}
+
+
+\end{document}
